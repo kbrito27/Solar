@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+<title>Best Solar</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+
+<style>
+@charset "UTF-8";
+/* CSS RESET BY MYE WEB */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+  -webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300; /* loaded 300 and 700*/
+}
+header {
+	border-top: 40px solid #004b8e;
+	background-image: ("sun.png");
+	/*Sun from https://openclipart.org/detail/3367/decorative-sun*/
+	background-repeat: no-repeat;
+}
+header h1 {
+	color: #e05b13;
+	font-size: 3rem;
+	
+	padding: .5rem 0 .5rem 60px;
+}
+header, nav, main, footer {max-width: 960px; margin: 0 auto;}
+nav {background-color: #004b8e}
+nav li {
+	float: left;
+	width: 25%;
+}
+nav li a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding: .5rem 0;
+	width: 100%;
+	text-align: center;
+	border-right: 1px solid #000;
+}
+nav li.active a {background-color: #002751;}
+main {padding: .3rem 2%; display: block;}
+main h1 {
+	color: #e05b13;
+	font-size: 2rem;
+	padding-top: 1rem;
+}
+main h2 {
+	color: #e05b13;
+	font-size: 1.5rem;
+	padding-top: 1rem;
+}
+main p{
+	line-height: 125%;
+	padding-bottom: .25rem;
+}
+main fieldset {
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: .5rem 2%;
+	margin-top: 1rem;
+}
+main fieldset legend {color:#004b8e; font-weight: 700;}
+
+main form label {
+	display: block;
+	padding: .4rem 0;
+	font-size: .75rem;
+   
+}
+main form span {
+	display: block;
+	font-size: .7rem;
+     color: #004b8e;
+}
+main form input {
+	width: 6rem;
+	font-size: .95rem;
+}
+main form select {
+	width: 15rem;
+}
+main button {
+	width: 240px;
+	border: none;
+	padding: .8rem;
+	color: #fff;
+	font-size: 1rem;
+	border-radius: 10px;
+	margin-top: 1rem;
+	background: #004b8e;
+	background: linear-gradient(to bottom,  #004b8e 1%,#002751 100%);
+}
+
+footer {
+	text-align: center;
+	background: #004b8e;
+	color: #fff;
+	font-size: .75rem;
+	padding: 1rem 0;
+}
+
+
+.keepOpen{clear: both;}
+
+main figure img {width: 100%;}
+
+@media only screen and (min-width: 30em) {
+   main figure {width:70%;float: right;} 
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+<header>
+<h1>Best Solar</h1>
+</header>
+<nav>
+<ul>
+<li class="active"><a href="index.html">Calculator</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="clients.html">Clients</a></li>
+</ul>
+<div class="keepOpen"></div>
+</nav>
+<main>
+<h1>Calculator</h1>
+<form name="solarForm" action="" method="post">
+<fieldset id="mpc"><legend>Monthly Power Consumption</legend>
+<p>In order to accuratly calculate your solar needs, we need to know how much power you use. Please enter the last 12 months of electrical usage below.</p>
+<label><span>January</span><input name="jan" type="number" value="">kWh</label>
+<label><span>February</span><input name="feb" type="number" value="">kWh</label>
+<label><span>March</span><input name="mar" type="number" value="">kWh</label>
+<label><span>April</span><input name="apr" type="number" value="">kWh</label>
+<label><span>May</span><input name="may" type="number" value="">kWh</label>
+<label><span>June</span><input name="jun" type="number" value="">kWh</label>
+<label><span>July</span><input name="jul" type="number" value="">kWh</label>
+<label><span>August</span><input name="aug" type="number" value="">kWh</label>
+<label><span>September</span><input name="sep" type="number" value="">kWh</label>
+<label><span>October</span><input name="oct" type="number" value="">kWh</label>
+<label><span>November</span><input name="nov" type="number" value="">kWh</label>
+<label><span>December</span><input name="dec" type="number" value="">kWh</label>
+
+</fieldset>
+
+
+<fieldset><legend>Sunshine Zone</legend>
+<figure><img src="map.jpg" alt="zone map"></figure>
+<p>Please use this map to determine which zone you are in.</p>
+<select name="zone">
+<option>Zone 1</option>
+<option>Zone 2</option>
+<option>Zone 3</option>
+<option>Zone 4</option>
+<option>Zone 5</option>
+<option>Zone 6</option>
+</select>
+</fieldset>
+
+
+<fieldset><legend>Panel Choice</legend>
+   
+<p>Please select a solar panel you would like to use.</p>
+<select name="panel">
+<option value="250">Axitec AC-250P/156-60S  </option>
+<option value="275">Canadian Solar CS6K-275M   </option>
+<option value="260">Hanwha Q.Pro BFR-G4.260  </option>
+</select>
+</fieldset>
+
+</form>
+
+<button onclick="calculateSolar();">Calculate Solar Needs</button>
+<h2>Solar Reccomendation</h2>
+<div id="feedback"><p>Enter your information above to calculate your solar needs.</p></div>
+</main>
+<footer>
+<p>Created by Paul Cheney for a Pluralsight course on JavaScript</p>
+</footer>
+
+</body>
+
+
+<script> 
+function addMonths(elem) {
+var annualuseKw = 0, dailyUseKw = 0, i = 0, x = 0;
+var months = document.getElementById(elem).getElementsByTagName('input');
+
+for (i = 0; i< months.length; i++) {
+x = Number(months[i].value);
+annualuseKw += x;
+}
+dailyUseKw = annualuseKw/365;
+return dailyUseKw;
+}
+
+function sunHours() {
+var hrs;
+var theZone = document.forms.solarForm.zone.selectedIndex;
+theZone += 1;
+
+
+switch(theZone) {
+case 1:
+hrs = 6;
+break;
+case 2:
+hrs = 5.5;
+break;
+case 3:
+hrs = 5;
+break;
+case 4:
+hrs = 4.5;
+break;
+case 5:
+hrs = 4.2;
+break;
+case 6:
+hrs = 3.5;
+break;
+default:
+hrs = 0;
+}
+
+return hrs;
+}
+
+
+function calculatePanel() {
+
+var userChoice = document.forms.solarForm.panel.selectedIndex;
+var panelOptions = document.forms.solarForm.panel.options;
+var power = panelOptions[userChoice].value;
+var name = panelOptions[userChoice].text;
+var x = [power,name];
+return x;
+}
+
+
+
+
+
+
+
+function calculateSolar(){
+
+var dailyUseKw = addMonths('mpc');
+//console.log(dailyUseKw);
+
+var sunHoursPerDay = sunHours();
+//console.log(sunHoursPerDay);
+
+var minKwNeeds = dailyUseKw/sunHoursPerDay;
+//console.log(minKwNeeds);
+
+var realKwNeeds = minKwNeeds * 1.25;
+//console.log(realKwNeeds);
+
+var realWattNeeds = realKwNeeds * 1000;
+//console.log(realWattNeeds);
+
+var panelInfo = calculatePanel();
+var panelOutput = panelInfo[0];
+var panelName = panelInfo[1];
+//console.log(panelOutput);
+//console.log(panelName);
+
+var panelsNeeded = Math.ceil(realWattNeeds / panelOutput);
+//console.log(panelsNeeded);
+
+var feedback ="";
+feedback += "<p>Based on your average daily use of "+Math.round(dailyUseKw)+" kWh, you will need to purchase  "+panelsNeeded+" "+panelName+" solar panels to offset 100% of your electrical bill.</p>";
+feedback += "<h2>Additianal Details </h2>";
+feedback += "<p>Your average daily electricity consumption: "+Math.round(dailyUseKw)+" kwh per day.</p>";
+feedback += "<p>Average sunshine hours per day: "+sunHoursPerDay+" hours</p>";
+feedback += "<p>Realistic watts needed per hour: "+Math.round(realWattNeeds)+" watts/hour. </p>";
+feedback += "<p>The "+panelName+" panel you selected generates about "+panelOutput+" watts per hour.</p>";
+
+document.getElementById('feedback').innerHTML=feedback;
+
+}
+
+
+
+</script>
+</html>
